@@ -57,9 +57,42 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="NovaPasta\**" />
+	  <AndroidResource Remove="Views\NovaPasta\**" />
+	  <Compile Remove="NovaPasta\**" />
+	  <Compile Remove="Views\NovaPasta\**" />
+	  <EmbeddedResource Remove="NovaPasta\**" />
+	  <EmbeddedResource Remove="Views\NovaPasta\**" />
+	  <MauiCss Remove="NovaPasta\**" />
+	  <MauiCss Remove="Views\NovaPasta\**" />
+	  <MauiXaml Remove="NovaPasta\**" />
+	  <MauiXaml Remove="Views\NovaPasta\**" />
+	  <None Remove="NovaPasta\**" />
+	  <None Remove="Views\NovaPasta\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\Lato-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Lato-Light.ttf" />
+	  <None Remove="Resources\Fonts\Lato-Regular.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContrataçãodaHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Sobre.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
